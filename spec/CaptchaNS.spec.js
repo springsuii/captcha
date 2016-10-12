@@ -49,5 +49,8 @@ describe('Captcha App', function () {
     var cap = new Captcha(p,1,2,2);
     expect(cap.generate()).toEqual('2 + Two');
   });
-
+  it('Pattern 1', function () {
+    var cap = new Captcha(p,1,3,3);
+    expect(cap.generate()).toEqual('3 + Three');
+    });
 });
