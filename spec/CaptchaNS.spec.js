@@ -53,4 +53,12 @@ describe('Captcha App', function () {
     var cap = new Captcha(p,1,3,3);
     expect(cap.generate()).toEqual('3 + Three');
     });
+
+});
+describe('Captcha App2', function () {
+  let p = 2;
+  it('Pattern 2', function () {
+    var cap = new Captcha(p,1,0,0);
+    expect(cap.generate()).toEqual('Zero + 0');
+  });
 });
