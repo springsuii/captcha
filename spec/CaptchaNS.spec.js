@@ -35,30 +35,35 @@ function RightOperand(pat , riop)
     }
 }
 }
-describe('Captcha App', function () {
+describe('Captcha App Pattern 1', function () {
   let p = 1;
-  it('Pattern 1', function () {
+  it('Generate 0 + Zero', function () {
     var cap = new Captcha(p,1,0,0);
     expect(cap.generate()).toEqual('0 + Zero');
   });
-  it('Pattern 1', function () {
+  it('Generate 1 + One', function () {
     var cap = new Captcha(p,1,1,1);
     expect(cap.generate()).toEqual('1 + One');
   });
-  it('Pattern 1', function () {
+  it('Generate 2 + Two', function () {
     var cap = new Captcha(p,1,2,2);
     expect(cap.generate()).toEqual('2 + Two');
   });
-  it('Pattern 1', function () {
+  it('Generate 3 + Three', function () {
     var cap = new Captcha(p,1,3,3);
     expect(cap.generate()).toEqual('3 + Three');
     });
 
 });
-describe('Captcha App2', function () {
+describe('Captcha App Pattern 2', function () {
   let p = 2;
-  it('Pattern 2', function () {
+  it('Generate Zero + 0', function () {
     var cap = new Captcha(p,1,0,0);
     expect(cap.generate()).toEqual('Zero + 0');
   });
+  it('Generate Five + 5', function () {
+    var cap = new Captcha(p,1,5,5);
+    expect(cap.generate()).toEqual('Five + 5');
+  });
+
 });
