@@ -53,6 +53,10 @@ describe('Captcha App Pattern 1', function () {
     var cap = new Captcha(p,1,3,3);
     expect(cap.generate()).toEqual('3 + Three');
     });
+  it('Generate 4 * Three', function () {
+    var cap = new Captcha(p,3,4,3);
+    expect(cap.generate()).toEqual('4 * Three');
+    });
 
 });
 describe('Captcha App Pattern 2', function () {
