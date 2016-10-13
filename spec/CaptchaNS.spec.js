@@ -65,5 +65,8 @@ describe('Captcha App Pattern 2', function () {
     var cap = new Captcha(p,1,5,5);
     expect(cap.generate()).toEqual('Five + 5');
   });
-
+  it('Generate Nine / 0', function () {
+    var cap = new Captcha(p,4,9,0);
+    expect(cap.generate()).toEqual('Nine / 0');
+  });
 });
